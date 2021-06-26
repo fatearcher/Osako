@@ -11,6 +11,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="./base.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-latest.min.js"
+    ></script>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          $(".fadein").each(function () {
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 200) {
+              $(this).css("opacity", "1");
+              $(this).css("transform", "translateY(0)");
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body id="pc" data-barba="wrapper">
     <div id="warp" class="pc">
@@ -135,167 +154,266 @@
                   <img src="./img/9.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 986px">
+              <article
+                style="position: absolute; left: 66%; top: 986px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/10.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 990px">
+              <article
+                style="position: absolute; left: 0%; top: 990px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/11.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 990px">
+              <article
+                style="position: absolute; left: 33%; top: 990px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/12.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 1647px">
+              <article
+                style="position: absolute; left: 66%; top: 1647px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/13.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 1651px">
+              <article
+                style="position: absolute; left: 0%; top: 1651px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/14.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 1651px">
+              <article
+                style="position: absolute; left: 33%; top: 1651px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/15.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 1976px">
+              <article
+                style="position: absolute; left: 66%; top: 1976px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/16.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 1980px">
+              <article
+                style="position: absolute; left: 33%; top: 1980px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/17.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 2305px">
+              <article
+                style="position: absolute; left: 66%; top: 2305px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/18.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 2313px">
+              <article
+                style="position: absolute; left: 0%; top: 2313px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/19.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 2642px">
+              <article
+                style="position: absolute; left: 33%; top: 2642px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/20.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 2967px">
+              <article
+                style="position: absolute; left: 66%; top: 2967px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/21.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 2974px">
+              <article
+                style="position: absolute; left: 0%; top: 2974px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/22.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 3303px">
+              <article
+                style="position: absolute; left: 33%; top: 3303px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/23.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 3628px">
+              <article
+                style="position: absolute; left: 66%; top: 3628px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/24.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 3636px">
+              <article
+                style="position: absolute; left: 0%; top: 3636px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/25.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 3965px">
+              <article
+                style="position: absolute; left: 33%; top: 3965px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/26.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 4290px">
+              <article
+                style="position: absolute; left: 66%; top: 4290px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/27.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 4297px">
+              <article
+                style="position: absolute; left: 0%; top: 4297px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/28.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 4626px">
+              <article
+                style="position: absolute; left: 33%; top: 4626px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/29.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 4951px">
+              <article
+                style="position: absolute; left: 66%; top: 4951px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/30.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 4959px">
+              <article
+                style="position: absolute; left: 0%; top: 4959px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/31.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 5288px">
+              <article
+                style="position: absolute; left: 33%; top: 5288px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/32.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 5613px">
+              <article
+                style="position: absolute; left: 66%; top: 5613px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/33.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 5620px">
+              <article
+                style="position: absolute; left: 0%; top: 5620px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/34.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 5949px">
+              <article
+                style="position: absolute; left: 33%; top: 5949px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/35.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 6274px">
+              <article
+                style="position: absolute; left: 66%; top: 6274px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/36.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 6278px">
+              <article
+                style="position: absolute; left: 33%; top: 6278px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/37.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 6282px">
+              <article
+                style="position: absolute; left: 0%; top: 6282px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/38.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 6611px">
+              <article
+                style="position: absolute; left: 0%; top: 6611px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/39.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 66%; top: 6936px">
+              <article
+                style="position: absolute; left: 66%; top: 6936px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/40.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 0%; top: 6939px">
+              <article
+                style="position: absolute; left: 0%; top: 6939px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/41.jpg" alt="" />
                 </figure>
               </article>
-              <article style="position: absolute; left: 33%; top: 6939px">
+              <article
+                style="position: absolute; left: 33%; top: 6939px"
+                class="fadein"
+              >
                 <figure class="btn-zoom">
                   <img src="./img/42.jpg" alt="" />
                 </figure>
@@ -307,7 +425,7 @@
         --></div>
       </main>
     </div>
-    <section class="sec-abput">
+    <section class="sec-abput fadein">
       <div class="sec-abput-inner">
         <div class="txt">
           <p>吹きガラスで得られたガラス本来のツヤを</p>

@@ -449,3 +449,9 @@ body.portfolio .fnav a {
   color: white;
   text-align: center;
 }
+
+.fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s;
+}
